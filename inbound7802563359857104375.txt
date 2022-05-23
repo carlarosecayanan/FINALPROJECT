@@ -1,0 +1,26 @@
+package diagram;
+
+public class BuyLaptop {
+	Customer customer;
+	Laptop laptop;
+	public String date ;
+	public int qty;
+	
+	public BuyLaptop(Customer customer,Laptop laptop,String date,int qty)
+	{
+		this.customer=customer;
+		this.laptop=laptop;
+		this.date=date;
+		this.qty=qty;
+	}
+	public void display()
+	{
+		customer.display();
+		laptop.display();
+		System.out.println("Date:"+date+"\nQuantity :"+qty);
+		laptop.onService();
+		laptop.offService();
+		
+	}
+
+}
