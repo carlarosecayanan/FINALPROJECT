@@ -1,0 +1,18 @@
+package diagram;
+
+public class User {
+	protected String name,loginID,password;
+	public User(String name,String loginID,String password)
+	{
+		this.name=name;
+		this.loginID=loginID;
+		this.password=password;
+	}
+	
+	public void display()
+	{
+		System.out.println("Name :"+name+"\nLogin ID:"+loginID+"\nPassword :"+password);
+	}
+	
+
+}
