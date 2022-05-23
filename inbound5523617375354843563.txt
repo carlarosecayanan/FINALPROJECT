@@ -1,0 +1,20 @@
+package diagram;
+
+   public class Customer extends User {
+	private final String email;
+	private final String cellNO;
+	
+	public Customer(String name,String loginID,String password,String email,String cellNO)
+	{
+		super(name,loginID,password);
+		this.email=email;
+		this.cellNO=cellNO;
+	}
+        @Override
+	public void display()
+	{
+		super.display();
+		System.out.println("Email:"+email+"\nCell NO:"+cellNO);
+	}
+
+}
