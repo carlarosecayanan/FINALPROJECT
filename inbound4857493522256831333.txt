@@ -1,0 +1,12 @@
+package diagram;
+
+public class Main {
+	public static void main(String[] args)
+	{
+		Customer cr = new Customer ("Jelai Andres","8748456","JA123456","jelaiandres@gmail.com","09041271154");
+		Laptop lp = new Laptop("ASUS","X542U","84,000","Output: 19V DC, 3.42A, 65W , Input : 100~240V AC, 50/60Hz universal");
+		BuyLaptop bl = new BuyLaptop(cr,lp,"18 April 2022",1);
+		bl.display();
+	}
+
+}
