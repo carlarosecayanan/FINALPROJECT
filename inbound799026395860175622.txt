@@ -1,0 +1,15 @@
+package diagram;
+public class ElectronicGadget {
+
+	protected String manufacturer;
+
+	public ElectronicGadget(String menufacturer)
+	{
+		this.manufacturer=menufacturer;
+	}
+	
+	public void display()
+	{
+		System.out.println("Manufacturer :"+manufacturer);
+	}
+}
