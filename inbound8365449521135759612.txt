@@ -1,0 +1,27 @@
+package diagram;
+
+public class Laptop extends ElectronicGadget {
+	private String name,price,powerpack;
+	
+	public Laptop(String manufacturer,String name,String price,String powerpack)
+	{
+		super(manufacturer);
+		this.name=name;
+		this.price=price;
+		this.powerpack=powerpack;
+	}
+	public void display()
+	{
+		super.display();
+		System.out.println("Name:"+name+"\nPrice :"+price+"\nPowerpack :"+powerpack);
+	}
+	public void onService()
+	{
+		System.out.println("On Service :2 Years international Warranty, Battery and Charger 1 Year Warranty");
+		
+	}
+	public void offService()
+	{
+		System.out.println("OFF Service :Not available");
+	}
+}
